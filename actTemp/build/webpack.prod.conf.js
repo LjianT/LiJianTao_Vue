@@ -45,10 +45,10 @@ baseConfig.entryFiles.forEach(dir => {
     baseWebpackConfig.entry[dir] = resolve(`${baseConfig.entryDir}/${dir}`);
     baseWebpackConfig.output.path = baseConfig.outputDir;
     baseWebpackConfig.output.filename = "js/[name]-[hash:7].js";
-    baseWebpackConfig.output.publicPath = "https://duimianimg.loovee.com/style/blindbox/act/" + baseConfig.actFolder + '/' + baseConfig.workFolder + "/";
+    baseWebpackConfig.output.publicPath = "https://baidu.com/" + baseConfig.actFolder + '/' + baseConfig.workFolder + "/";
     // baseWebpackConfig.output.publicPath = "/" + baseConfig.workFolder + "/";
 });
-
+s
 /**
  * Handle HTML Templates
  * 处理html模板

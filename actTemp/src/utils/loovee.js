@@ -212,37 +212,6 @@ const loovee = {
         }
         return uuid.join('');
     },
-
-     /**
-     * 调用客户端分享
-     * @param JSON $json
-     */
-    share:function (json) {
-        json = JSON.stringify(json);
-		if( typeof(client) !== 'undefined' ) {
-            if (typeof(window.client.share) !== 'undefined') {
-                window.client.share(json);
-                return;
-            }
-        }
-        if( typeof(webkit) !== 'undefined' ){
-            if(typeof(window.webkit.messageHandlers) !== 'undefined' ){
-                if(typeof(window.webkit.messageHandlers.client_share) !== 'undefined' ){
-                    window.webkit.messageHandlers.client_share.postMessage(json);
-                    return;
-                }
-                if(typeof(window.webkit.messageHandlers.share) !== 'undefined' ){
-                    window.webkit.messageHandlers.share.postMessage(json);
-                    return;
-                }
-                if(typeof(window.webkit.messageHandlers.goToWebView) !== 'undefined' ){
-                    window.webkit.messageHandlers.goToWebView.postMessage(json);
-                    return;
-                }
-            }
-        }
-        return json;
-    },
 };
 
 export default loovee;

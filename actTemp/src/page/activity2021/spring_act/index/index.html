@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>春节集福</title>
+    <title>title</title>
     <meta charset="UTF-8" />
     <meta http-equiv="x-dns-prefetch-control" content="on" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -110,9 +110,6 @@
         }
 
     </style>
-
-    <!-- vConsole example: ?debug=true -->
-    <script type="text/javascript" src="https://duimianimg.loovee.com/lib/h5Console/vLog.js"></script>
     <script type="text/javascript">
         // 屏幕适配
         (function (doc, win) {
@@ -155,57 +152,9 @@
             );
         })(document, window);
     </script>
-
-    <script type="text/javascript">
-        // isH5:h5页面   isSmartprogram:百度小程序	 miniprogram:微信小程序  其他app环境
-        window.isH5 = getQueryString('isH5');
-        // 区分商户标识
-        window.downfrom = getQueryString('downfrom');
-        // window.isH5 = 'miniprogram';
-
-        if (window.isH5 === 'miniprogram') {
-            // 微信小程序 JS-SDK 如果不需要兼容微信小程序，则无需引用此 JS 文件。
-            document.write(
-                '<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"><\/script>');
-        } else if (window.isH5 === 'isSmartprogram') {
-            // 百度小程序 JS-SDK 如果不需要兼容百度小程序，则无需引用此 JS 文件。
-            document.write(
-                '<script type="text/javascript" src="https://b.bdstatic.com/searchbox/icms/searchbox/js/swan-2.0.18.js"><\/script>'
-            );
-        }
-
-        function getQueryString(name) {
-            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-            var r = window.location.search.substr(1).match(reg); //获取url中"?"符后的字符串并正则匹配
-            var context = "";
-            if (r != null)
-                context = r[2];
-            reg = null;
-            r = null;
-            return context == null || context == "" || context == "undefined" ? "" : decodeURI(context);
-        }
-    </script>
-
-    <!-- uni 的 SDK -->
-    <script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.2.js"></script>
-    <script async type="text/javascript" src="//cdn.cmop.mgtv.com/assets/js/sdk/mgtv-js-sdk-min.js"></script>
-
-    <script src="https://duimianimg.loovee.com/lib/vue/2.5.16/vue.min.js"></script>
-    <script src="https://duimianimg.loovee.com/lib/axios/0.18.0/axios.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://duimianimg.loovee.com/lib/swiper/4.5.0/css/swiper.min.css" />
-    <script type="text/javascript" src="https://duimianimg.loovee.com/lib/swiper/4.3.5/js/swiper.js"></script>
-    <script>
-        window._czc = window._czc || [];
-        _czc.push(["_setAccount", "1279663063"]);
-    </script>
 </head>
-
 <body>
     <div id="app"></div>
-    <div style="display: none">
-        <script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1279663063&web_id=1279663063"></script>
-        <!-- <script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1279641660&web_id=1279641660"></script> -->
-    </div>
 </body>
 
 </html>

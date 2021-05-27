@@ -161,7 +161,7 @@ const webpackConfig = merge(vuxConfig, {
         // 跨域设置
         proxy: {
             "/api": {
-                target: 'https://bbmt.loovee.com/',
+                target: 'https://baidu.com/',
                 changeOrigin: true,
                 pathRewrite: {
                     "^/api": "/"

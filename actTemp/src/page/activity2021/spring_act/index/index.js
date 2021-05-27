@@ -7,13 +7,9 @@ promise.polyfill();
 FastClick.attach(document.body);
 Vue.config.productionTip = false;
 if (process.env.env === "prod") {
-    if (location.host == "weixin.cmop.mgtv.com") {
-        window.baseurl = "/lewei/";
-    } else {
-        window.baseurl = "/";
-    }
+    window.baseurl = "/";
 } else {
-    window.baseurl = "https://bbmt.loovee.com/";
+    window.baseurl = "/";
 }
 
 new Vue({
