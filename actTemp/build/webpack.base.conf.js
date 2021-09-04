@@ -6,10 +6,10 @@ const path = require('path');
 const resolve = (p) => path.resolve(__dirname, "..", p);
 
 /* ■■■■■■■ 当前要处理的活动文件夹类别 ■■■■■■■ */
-const actFolder = "client";
+const actFolder = "demo";
 
 /* ■■■■■■■ 当前要处理的活动文件夹 ■■■■■■■ */
-const workFolder = "turntable_act";
+const workFolder = "demo1";
 
 // 入口文件夹
 const entryDir = resolve("src/page/" + actFolder + "/" + workFolder);

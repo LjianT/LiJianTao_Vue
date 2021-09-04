@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>title</title>
+    <title>demo</title>
     <meta charset="UTF-8" />
     <meta http-equiv="x-dns-prefetch-control" content="on" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -122,7 +122,7 @@
                     var clientWidth = docEl.clientWidth;
                     var clientHeight = docEl.clientHeight;
                     if (!clientWidth) return;
-                    // clientWidth = clientWidth >= 750 ? 750 : clientWidth;
+                    clientWidth = clientWidth >= 750 ? 750 : clientWidth;
                     var rem = clientWidth / 10;
                     docEl.style.fontSize = rem + "px";
                     var dpr = parseInt(window.devicePixelRatio);

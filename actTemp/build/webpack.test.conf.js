@@ -41,17 +41,11 @@ baseConfig.entryFiles.forEach(dir => {
     baseWebpackConfig.entry[dir] = resolve(`${baseConfig.entryDir}/${dir}`);
     baseWebpackConfig.output.path = baseConfig.outputDir;
     baseWebpackConfig.output.filename = "js/[name].js";
-    baseWebpackConfig.output.publicPath =
-        "/style/" + baseConfig.workFolder + "/";
-    baseWebpackConfig.output.publicPath =
-        "https://bbmt.loovee.com/" +
-        baseConfig.actFolder +
-        "/" +
-        baseConfig.workFolder +
-        "/";
-    // baseWebpackConfig.output.publicPath = "http://loovee.imdo.co/" + baseConfig.actFolder + '/' + baseConfig.workFolder + "/";
+    // baseWebpackConfig.output.publicPath =
+    //     "/style/" + baseConfig.workFolder + "/";
+    baseWebpackConfig.output.publicPath = "https://baidu.com/" + baseConfig.actFolder + '/' + baseConfig.workFolder + "/";
+    // baseWebpackConfig.output.publicPath = "/" + baseConfig.workFolder + "/";
 
-    // baseWebpackConfig.output.publicPath = "http://local.loovee.com:4003/" + baseConfig.actFolder + '/' + baseConfig.workFolder + "/";
 });
 
 /**
